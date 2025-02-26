@@ -35,12 +35,20 @@ public class ViewFrustum : MonoBehaviour
         transform.localScale=new Vector3(viewRadius*2,viewHeight*2,viewRadius*2);
         materialPropertyBlock.SetVector("viewCenter", transform.position);
         materialPropertyBlock.SetFloat("viewRadius", viewRadius);
+        materialPropertyBlock.SetFloat("viewAngle", viewAngle);
+        materialPropertyBlock.SetVector("viewForward", transform.parent.forward);
+        materialPropertyBlock.SetMatrix("depthViewMatrix", depthCamera.worldToCameraMatrix);
+        var ProjMatrix=GL.GetGPUProjectionMatrix(depthCamera.projectionMatrix,depthCamera.targetTexture!=null);
+        materialPropertyBlock.SetMatrix("depthProjMatrix",ProjMatrix);
+        materialPropertyBlock.SetMatrix("invDepthProjMatrix",Matrix4x4.Inverse(ProjMatrix));
+        materialPropertyBlock.SetFloat("far",depthCamera.farClipPlane);
+        materialPropertyBlock.SetFloat("near",depthCamera.nearClipPlane);
         viewRenderer.SetPropertyBlock( materialPropertyBlock);
     }
 
     void CreateDepthTexture()
     {
-        RenderTextureDescriptor depthTexDesc = new RenderTextureDescriptor();
+        RenderTextureDescriptor depthTexDesc = default;
         depthTexDesc.dimension = UnityEngine.Rendering.TextureDimension.Tex2D;
         depthTexDesc.width = viewPixelWidth;
         depthTexDesc.height = viewPixelHeight;
@@ -48,8 +56,11 @@ public class ViewFrustum : MonoBehaviour
         depthTexDesc.colorFormat = RenderTextureFormat.Depth;
         depthTexDesc.depthBufferBits = 32;
         depthTexDesc.msaaSamples = 1;//禁用MSAA
-        depthTexture = new RenderTexture(depthTexDesc);
-        depthTexture.Create();
+        RenderTexture tex = new RenderTexture(depthTexDesc);
+        tex.Create();
+        depthTexture = tex;
+        
+        materialPropertyBlock.SetTexture("_depthTex", depthTexture);
     }
     void SetCamera()
     {
@@ -63,5 +74,6 @@ public class ViewFrustum : MonoBehaviour
         depthCamera.fieldOfView = verticalFOV;
         depthCamera.farClipPlane = viewRadius;
         depthCamera.rect = new Rect(0f, 0f, 1f, 1f);
+        depthCamera.allowMSAA = false;
     }
 }
