@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Assets\视野可视化\Scripts\ViewFrustum.cs" />
+    <None Include="Assets\带土神威效果\ShenweiShader.shader" />
     <None Include="Assets\视野可视化\Materials\ViewShader.shader" />
     <Reference Include="UnityEngine">
       <HintPath>E:\2022.3.34f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
