@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Assets\视野可视化\Scripts\ViewFrustum.cs" />
     <None Include="Assets\视野可视化\Materials\ViewShader.shader" />
+    <None Include="Assets\空间漩涡\WhirlSpace.shader" />
     <Reference Include="UnityEngine">
       <HintPath>E:\2022.3.34f1c1\Editor\Data\Managed\UnityEngine\UnityEngine.dll</HintPath>
     </Reference>

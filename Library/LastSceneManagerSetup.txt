@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< Updated upstream
 - path: "Assets/\u89C6\u91CE\u53EF\u89C6\u5316/Scene_ViewFrustum.unity"
+=======
+- path: "Assets/\u7A7A\u95F4\u6F29\u6DA1/WhirlSpace.unity"
+>>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1
   isSubScene: 0

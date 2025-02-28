@@ -1,6 +1,6 @@
 Using pre-set license
 Built from '2022.3/china_unity/release' branch; Version is '2022.3.34f1c1 (1e17368ca73f) revision 1972022'; Using compiler version '192829333'; Build Type 'Release'
-OS: 'Windows 11  (10.0.22631) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 32029 MB
+OS: 'Windows 11  (10.0.26100) 64bit CoreCountrySpecific' Language: 'zh' Physical Memory: 32029 MB
 BatchMode: 1, IsHumanControllingUs: 0, StartBugReporterOnCrash: 0, Is64bit: 1, IsPro: 1
 
 COMMAND LINE ARGUMENTS:
@@ -15,7 +15,11 @@ E:/unity_program/MyLab
 -logFile
 Logs/AssetImportWorker0.log
 -srvPort
+<<<<<<< Updated upstream
 63386
+=======
+50548
+>>>>>>> Stashed changes
 Successfully changed project path to: E:/unity_program/MyLab
 E:/unity_program/MyLab
 [UnityMemory] Configuration Parameters - Can be set up in boot.config
@@ -49,12 +53,21 @@ E:/unity_program/MyLab
     "memorysetup-temp-allocator-size-cloud-worker=32768"
     "memorysetup-temp-allocator-size-gi-baking-worker=262144"
     "memorysetup-temp-allocator-size-gfx=262144"
+<<<<<<< Updated upstream
 Player connection [8328] Host "[IP] 10.67.96.92 [Port] 0 [Flags] 2 [Guid] 2609768497 [EditorId] 2609768497 [Version] 1048832 [Id] WindowsEditor(7,First) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
 
 Player connection [8328] Host "[IP] 10.67.96.92 [Port] 0 [Flags] 2 [Guid] 2609768497 [EditorId] 2609768497 [Version] 1048832 [Id] WindowsEditor(7,First) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
 
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 Refreshing native plugins compatible for Editor in 21.72 ms, found 3 plugins.
+=======
+Player connection [2972] Host "[IP] 10.67.96.92 [Port] 0 [Flags] 2 [Guid] 3577714666 [EditorId] 3577714666 [Version] 1048832 [Id] WindowsEditor(7,First) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined multi-casting on [225.0.0.222:54997]...
+
+Player connection [2972] Host "[IP] 10.67.96.92 [Port] 0 [Flags] 2 [Guid] 3577714666 [EditorId] 3577714666 [Version] 1048832 [Id] WindowsEditor(7,First) [Debug] 1 [PackageName] WindowsEditor [ProjectName] Editor" joined alternative multi-casting on [225.0.0.222:34997]...
+
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+Refreshing native plugins compatible for Editor in 14.98 ms, found 3 plugins.
+>>>>>>> Stashed changes
 Preloading 0 native plugins for Editor in 0.00 ms.
 Initialize engine version: 2022.3.34f1c1 (1e17368ca73f)
 [Subsystems] Discovering subsystems at path E:/2022.3.34f1c1/Editor/Data/Resources/UnitySubsystems
@@ -70,14 +83,23 @@ Initialize mono
 Mono path[0] = 'E:/2022.3.34f1c1/Editor/Data/Managed'
 Mono path[1] = 'E:/2022.3.34f1c1/Editor/Data/MonoBleedingEdge/lib/mono/unityjit-win32'
 Mono config path = 'E:/2022.3.34f1c1/Editor/Data/MonoBleedingEdge/etc'
+<<<<<<< Updated upstream
 Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56712
+=======
+Using monoOptions --debugger-agent=transport=dt_socket,embedding=1,server=y,suspend=n,address=127.0.0.1:56152
+>>>>>>> Stashed changes
 Begin MonoManager ReloadAssembly
 Registering precompiled unity dll's ...
 Register platform support module: E:/2022.3.34f1c1/Editor/Data/PlaybackEngines/AndroidPlayer/UnityEditor.Android.Extensions.dll
 Register platform support module: E:/2022.3.34f1c1/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.dll
 Register platform support module: E:/2022.3.34f1c1/Editor/Data/PlaybackEngines/WindowsStandaloneSupport/UnityEditor.WindowsStandalone.Extensions.dll
+<<<<<<< Updated upstream
 Registered in 0.015308 seconds.
 - Loaded All Assemblies, in  0.648 seconds
+=======
+Registered in 0.010927 seconds.
+- Loaded All Assemblies, in  0.750 seconds
+>>>>>>> Stashed changes
 Native extension for WindowsStandalone target not found
 [usbmuxd] Start listen thread
 [usbmuxd] Listen thread started
@@ -97,14 +119,21 @@ InvalidOperationException: Cannot start process because a file name has not been
   at UnityEditor.Modules.ModuleManager.InitializePlatformSupportModules () [0x0009d] in <44bf6cac841340ac9cb70f5448ebceba>:0 
 
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Finished resetting the current domain, in  0.758 seconds
 Domain Reload Profiling: 1403ms
 	BeginReloadAssembly (186ms)
+=======
+- Finished resetting the current domain, in  0.472 seconds
+Domain Reload Profiling: 1217ms
+	BeginReloadAssembly (165ms)
+>>>>>>> Stashed changes
 		ExecutionOrderSort (0ms)
 		DisableScriptedObjects (0ms)
 		BackupInstance (0ms)
 		ReleaseScriptingObjects (0ms)
 		CreateAndSetChildDomain (1ms)
+<<<<<<< Updated upstream
 	RebuildCommonClasses (49ms)
 	RebuildNativeTypeToScriptingClass (20ms)
 	initialDomainReloadingComplete (96ms)
@@ -127,6 +156,30 @@ Domain Reload Profiling: 1403ms
 			BeforeProcessingInitializeOnLoad (4ms)
 			ProcessInitializeOnLoadAttributes (197ms)
 			ProcessInitializeOnLoadMethodAttributes (108ms)
+=======
+	RebuildCommonClasses (65ms)
+	RebuildNativeTypeToScriptingClass (11ms)
+	initialDomainReloadingComplete (82ms)
+	LoadAllAssembliesAndSetupDomain (420ms)
+		LoadAssemblies (163ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (416ms)
+			TypeCache.Refresh (415ms)
+				TypeCache.ScanAssembly (396ms)
+			ScanForSourceGeneratedMonoScriptInfo (0ms)
+			ResolveRequiredComponents (1ms)
+	FinalizeReload (473ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (401ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (150ms)
+			SetLoadedEditorAssemblies (8ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (3ms)
+			ProcessInitializeOnLoadAttributes (185ms)
+			ProcessInitializeOnLoadMethodAttributes (55ms)
+>>>>>>> Stashed changes
 			AfterProcessingInitializeOnLoad (0ms)
 			EditorAssembliesLoaded (0ms)
 		ExecutionOrderSort2 (0ms)
@@ -134,12 +187,18 @@ Domain Reload Profiling: 1403ms
 ========================================================================
 Worker process is ready to serve import requests
 Begin MonoManager ReloadAssembly
+<<<<<<< Updated upstream
 - Loaded All Assemblies, in  0.758 seconds
 Refreshing native plugins compatible for Editor in 2.66 ms, found 3 plugins.
+=======
+- Loaded All Assemblies, in  0.677 seconds
+Refreshing native plugins compatible for Editor in 2.60 ms, found 3 plugins.
+>>>>>>> Stashed changes
 Native extension for WindowsStandalone target not found
 Native extension for iOS target not found
 Native extension for Android target not found
 Mono: successfully reloaded assembly
+<<<<<<< Updated upstream
 - Finished resetting the current domain, in  0.883 seconds
 Domain Reload Profiling: 1640ms
 	BeginReloadAssembly (258ms)
@@ -181,6 +240,49 @@ Unloading 3130 Unused Serialized files (Serialized files now loaded: 0)
 Unloading 34 unused Assets / (57.7 KB). Loaded Objects now: 3594.
 Memory consumption went from 130.2 MB to 130.2 MB.
 Total: 4.319800 ms (FindLiveObjects: 0.231700 ms CreateObjectMapping: 0.077300 ms MarkObjects: 3.875000 ms  DeleteObjects: 0.134000 ms)
+=======
+- Finished resetting the current domain, in  0.981 seconds
+Domain Reload Profiling: 1657ms
+	BeginReloadAssembly (157ms)
+		ExecutionOrderSort (0ms)
+		DisableScriptedObjects (7ms)
+		BackupInstance (0ms)
+		ReleaseScriptingObjects (0ms)
+		CreateAndSetChildDomain (27ms)
+	RebuildCommonClasses (67ms)
+	RebuildNativeTypeToScriptingClass (12ms)
+	initialDomainReloadingComplete (48ms)
+	LoadAllAssembliesAndSetupDomain (390ms)
+		LoadAssemblies (312ms)
+		RebuildTransferFunctionScriptingTraits (0ms)
+		AnalyzeDomain (171ms)
+			TypeCache.Refresh (152ms)
+				TypeCache.ScanAssembly (137ms)
+			ScanForSourceGeneratedMonoScriptInfo (14ms)
+			ResolveRequiredComponents (3ms)
+	FinalizeReload (983ms)
+		ReleaseScriptCaches (0ms)
+		RebuildScriptCaches (0ms)
+		SetupLoadedEditorAssemblies (815ms)
+			LogAssemblyErrors (0ms)
+			InitializePlatformSupportModulesInManaged (58ms)
+			SetLoadedEditorAssemblies (4ms)
+			RefreshPlugins (0ms)
+			BeforeProcessingInitializeOnLoad (110ms)
+			ProcessInitializeOnLoadAttributes (617ms)
+			ProcessInitializeOnLoadMethodAttributes (19ms)
+			AfterProcessingInitializeOnLoad (6ms)
+			EditorAssembliesLoaded (0ms)
+		ExecutionOrderSort2 (0ms)
+		AwakeInstancesAfterBackupRestoration (6ms)
+Launched and connected shader compiler UnityShaderCompiler.exe after 0.07 seconds
+Refreshing native plugins compatible for Editor in 10.53 ms, found 3 plugins.
+Preloading 0 native plugins for Editor in 0.00 ms.
+Unloading 3131 Unused Serialized files (Serialized files now loaded: 0)
+Unloading 34 unused Assets / (57.7 KB). Loaded Objects now: 3596.
+Memory consumption went from 130.7 MB to 130.7 MB.
+Total: 5.888600 ms (FindLiveObjects: 0.579800 ms CreateObjectMapping: 0.216500 ms MarkObjects: 4.901500 ms  DeleteObjects: 0.188800 ms)
+>>>>>>> Stashed changes
 
 AssetImportParameters requested are different than current active one (requested -> active):
   custom:container-demuxer-ogg: 62fdf1f143b41e24485cea50d1cbac27 -> 
@@ -198,15 +300,24 @@ AssetImportParameters requested are different than current active one (requested
   custom:audio-encoder-webm-vorbis: bf7c407c2cedff20999df2af8eb42d56 -> 
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 635935.087897 seconds.
   path: Assets/视野可视化/Materials/ViewShader.shader
   artifactKey: Guid(2724ba4729527714297fe0787c38ae22) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
 Start importing Assets/视野可视化/Materials/ViewShader.shader using Guid(2724ba4729527714297fe0787c38ae22) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
  -> (artifact id: '6bc3a8848adb87762fc6469f9b95fddc') in 0.013756 seconds
+=======
+  Time since last request: 7062.035910 seconds.
+  path: Assets/带土神威效果/ShenweiShader.shader
+  artifactKey: Guid(04285778d0c6e324db1885932e06b09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/带土神威效果/ShenweiShader.shader using Guid(04285778d0c6e324db1885932e06b09c) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'f7f786ba82f26d796245ef813bad2830') in 0.016853 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 0
 ========================================================================
 Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 0.000024 seconds.
   path: Assets/视野可视化/Materials/ViewFrustum.mat
   artifactKey: Guid(fef30d61f6e0df34ea6fdbf357dd5cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -3477,10 +3588,93 @@ Received Import Request.
 Start importing Assets/视野可视化/Materials/ViewFrustum.mat using Guid(fef30d61f6e0df34ea6fdbf357dd5cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
  -> (artifact id: 'dbd7cceef5b7ede61b2de52c1564cec0') in 0.073831 seconds
+=======
+  Time since last request: 79.582583 seconds.
+  path: Assets/带土神威效果/ShenweiMaterial.mat
+  artifactKey: Guid(8c6000dac3423e142a67098a85c42caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/带土神威效果/ShenweiMaterial.mat using Guid(8c6000dac3423e142a67098a85c42caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '7493e3311503e0cce7d997773b7a21d9') in 0.071176 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1287.722169 seconds.
+  path: Assets/带土神威效果/ShenweiMaterial.mat
+  artifactKey: Guid(8c6000dac3423e142a67098a85c42caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/带土神威效果/ShenweiMaterial.mat using Guid(8c6000dac3423e142a67098a85c42caa) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '7e631789952de9319afd47fec7460885') in 0.014077 seconds
+Number of updated asset objects reloaded before import = 1
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 9.165104 seconds.
+  path: Assets/带土神威效果/Shenwei.unity
+  artifactKey: Guid(cef25de049e755b49a261e3b82d86910) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/带土神威效果/Shenwei.unity using Guid(cef25de049e755b49a261e3b82d86910) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '4461586bee09e020a287111ef12894be') in 0.000741 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 35.350592 seconds.
+  path: Assets/空间漩涡
+  artifactKey: Guid(4f7255808a7676c4d96a9c1d06e3572a) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/空间漩涡 using Guid(4f7255808a7676c4d96a9c1d06e3572a) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '4aa21286ba2eccbc9458d4f432ee7137') in 0.000638 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 66.581204 seconds.
+  path: Assets/空间漩涡/whirl.unity
+  artifactKey: Guid(506baae769b28a042a9cfcd074cb6965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/空间漩涡/whirl.unity using Guid(506baae769b28a042a9cfcd074cb6965) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'addfc1b26a1596904cd2f03167a93c1b') in 0.000621 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 12.016648 seconds.
+  path: Assets/空间漩涡/WhirlSpace.unity
+  artifactKey: Guid(506baae769b28a042a9cfcd074cb6965) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/空间漩涡/WhirlSpace.unity using Guid(506baae769b28a042a9cfcd074cb6965) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '5af328c979af0e5fd733293b33f297e1') in 0.000764 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 0
+========================================================================
+Received Import Request.
+  Time since last request: 62.908530 seconds.
+  path: Assets/空间漩涡/WhirlSpace.shader
+  artifactKey: Guid(5c2c4d8cb429e6f4faab9306958018d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/空间漩涡/WhirlSpace.shader using Guid(5c2c4d8cb429e6f4faab9306958018d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '420c42b92e2011251ff23444b4b006c3') in 0.002082 seconds
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 1
 ========================================================================
 Received Import Request.
+  Time since last request: 1161.656346 seconds.
+  path: Assets/空间漩涡/WhirlSpace.shader
+  artifactKey: Guid(5c2c4d8cb429e6f4faab9306958018d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/空间漩涡/WhirlSpace.shader using Guid(5c2c4d8cb429e6f4faab9306958018d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'fa180eaa6e828544fb2615d73c0e20cb') in 0.001379 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 18.608416 seconds.
+  path: Assets/空间漩涡/WhirlSpace.mat
+  artifactKey: Guid(be2c3bdf29901d44fb807291c4e972e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/空间漩涡/WhirlSpace.mat using Guid(be2c3bdf29901d44fb807291c4e972e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'ccb67ed95e42e4dcfeb7f45232b9d250') in 0.013321 seconds
+>>>>>>> Stashed changes
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+<<<<<<< Updated upstream
   Time since last request: 32.011315 seconds.
   path: Assets/视野可视化/Materials/ViewFrustum.mat
   artifactKey: Guid(fef30d61f6e0df34ea6fdbf357dd5cbd) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
@@ -6270,6 +6464,50 @@ Received Import Request.
 Start importing Packages/com.unity.visualscripting/Editor/VisualScripting.Core/IconMap/AnimatorMessageListener@32x.png using Guid(9059e055aa673b3469a5c2896c0b8fb5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
 [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
  -> (artifact id: '70e30441738ce2d81336bfba568d440a') in 0.051187 seconds
+=======
+  Time since last request: 176.293511 seconds.
+  path: Assets/空间漩涡/WhirlSpace.shader
+  artifactKey: Guid(5c2c4d8cb429e6f4faab9306958018d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/空间漩涡/WhirlSpace.shader using Guid(5c2c4d8cb429e6f4faab9306958018d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '6ec6451120703dbc0461ebcc0b072205') in 0.001939 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 34.935640 seconds.
+  path: Assets/空间漩涡/WhirlSpace.shader
+  artifactKey: Guid(5c2c4d8cb429e6f4faab9306958018d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/空间漩涡/WhirlSpace.shader using Guid(5c2c4d8cb429e6f4faab9306958018d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '5adca7b09c95680b8c8dbf133b490b8c') in 0.001802 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 4772.396261 seconds.
+  path: Assets/空间漩涡/WhirlSpace.shader
+  artifactKey: Guid(5c2c4d8cb429e6f4faab9306958018d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/空间漩涡/WhirlSpace.shader using Guid(5c2c4d8cb429e6f4faab9306958018d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '8b9fdf30e583a30419ac5278f0d1bfc0') in 0.001262 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 471.183200 seconds.
+  path: Assets/空间漩涡/WhirlSpace.shader
+  artifactKey: Guid(5c2c4d8cb429e6f4faab9306958018d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/空间漩涡/WhirlSpace.shader using Guid(5c2c4d8cb429e6f4faab9306958018d1) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: '370033bfd48e44d52a1fc6eb1afe07cd') in 0.001720 seconds
+Number of updated asset objects reloaded before import = 0
+Number of asset objects unloaded after import = 1
+========================================================================
+Received Import Request.
+  Time since last request: 1391.587117 seconds.
+  path: Assets/空间漩涡/WhirlSpace.mat
+  artifactKey: Guid(be2c3bdf29901d44fb807291c4e972e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b)
+Start importing Assets/空间漩涡/WhirlSpace.mat using Guid(be2c3bdf29901d44fb807291c4e972e5) Importer(815301076,1909f56bfc062723c751e8b465ee728b) [PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+[PhysX] Initialized MultithreadedTaskDispatcher with 16 workers.
+ -> (artifact id: 'e68ab2de8c3cd3efa27b67d2adab26fc') in 0.033712 seconds
+>>>>>>> Stashed changes
 Number of updated asset objects reloaded before import = 0
 Number of asset objects unloaded after import = 2
 ========================================================================
