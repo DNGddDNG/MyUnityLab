@@ -1,5 +1,9 @@
 sceneSetups:
+<<<<<<< Updated upstream
 - path: "Assets/\u89C6\u91CE\u53EF\u89C6\u5316/Scene_ViewFrustum.unity"
+=======
+- path: Assets/Assets/Resources/SampleScene.unity
+>>>>>>> Stashed changes
   isLoaded: 1
   isActive: 1
   isSubScene: 0
