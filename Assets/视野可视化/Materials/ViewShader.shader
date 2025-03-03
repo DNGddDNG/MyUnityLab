@@ -75,22 +75,13 @@ Shader "Unlit/ViewShader"
                     float z = x/far;
                     float w = 1/far;
                 #else
-                    float x = 1-far/near
-                    float y = far/near
-                    float z = x/far
-                    float w = y/far
+                    float x = 1-far/near;
+                    float y = far/near;
+                    float z = x/far;
+                    float w = y/far;
                 #endif
             
                 return 1.0 / (z * depth + w);
-            }
-            
-            float3 DepthToViewPositionDepthCamera(float4 screenPos)
-            {
-                float4 depth=LinearEyeDepthByDepthMatrix(UNITY_SAMPLE_DEPTH(tex2Dproj(_depthTex,screenPos)));
-                float4 ndcPos=(screenPos/screenPos.w)*2-1;
-                float3 clipPos=float3(ndcPos.x,ndcPos.y,1)*far;
-                float3 viewPos=mul(invDepthProjMatrix,clipPos.xyzz).xyz*depth;
-                return viewPos;
             }
             
             v2f vert (appdata v)
@@ -113,9 +104,9 @@ Shader "Unlit/ViewShader"
                 return worldPos;
             }
 
-            float2 GetUVFromWorldPos(float4 viewPos)
+            float2 GetUVFromWorldPos(float4 clipPos)
             {
-                float4 clipPos=mul(depthProjMatrix,viewPos);
+                //float4 clipPos=mul(depthProjMatrix,viewPos);
                 float4 screenPos=ComputeScreenPos(clipPos);
                 float2 uv=(screenPos/screenPos.w).xy;
                 return uv;
@@ -129,8 +120,8 @@ Shader "Unlit/ViewShader"
                 clip(float3(0.5,0.5,0.5)-abs(localPos.xyz));
 
                 //剔除自身周围一定范围内
-                float wolrdRadius=distance(worldPos.xz,viewCenter.xz);
-                clip(wolrdRadius-0.5);
+                float worldRadius=distance(worldPos.xz,viewCenter.xz);
+                clip(worldRadius-0.5);
 
                 //剔除半径外
                 float xzDistance=distance(worldPos.xz,viewCenter.xz);
@@ -143,9 +134,15 @@ Shader "Unlit/ViewShader"
 
                 //剔除垂直面
                 
-                //剔除被遮挡
                 float4 viewPos=mul(depthViewMatrix,float4(worldPos,1));
-                float2 uv=GetUVFromWorldPos(viewPos);
+                //剔除视锥体外
+                float4 clipPos=mul(depthProjMatrix,viewPos);
+                float3 ndcPos=clipPos.xyz/clipPos.w;
+                clip(ndcPos+float3(1,1,1));
+                clip(float3(1,1,1)-ndcPos);
+                
+                //剔除被遮挡
+                float2 uv=GetUVFromWorldPos(clipPos);
                 float depth=UNITY_SAMPLE_DEPTH(tex2D(_depthTex,uv));
                 float actualDepth=-viewPos.z;
                 float texDepth=LinearEyeDepthByDepthMatrix(depth);

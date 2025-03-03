@@ -1,5 +1,5 @@
 sceneSetups:
-- path: "Assets/RTT_Shadow\u89C6\u91CE\u53EF\u89C6\u5316/Resources/SampleScene.unity"
+- path: "Assets/\u89C6\u91CE\u53EF\u89C6\u5316/Scene_ViewFrustum.unity"
   isLoaded: 1
   isActive: 1
   isSubScene: 0
